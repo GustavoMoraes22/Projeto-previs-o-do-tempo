@@ -1,89 +1,136 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;/*que indica que o tamanho da pagina vai até as bordas*/
-    font-family: 'Open Sans', sans-serif;/*vai mudar a fonte da pagina */
-
-}/*Isso eu vou usar em todos os sites que eu fizer*/
-
-body{
-    height: 100vh;/*vai ocupar a tela toda.  'altura'*/
-    width: 100vw;/*vai ocupar a tela toda. 'largura'*/
-    display: flex;/*vai deixar os elementos mais flexiveis para mudar a posição*/
-    justify-content: center;/*vai alinhar o elemento no  centro do eixo horizontal*/
-    align-items: center;/*vai alinhar o elemento no centro do eixo vertical*/
-    background-image: url("https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY5NjU0NzE2NA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");/*vai colocar uma imagem de fundo pega da internet*/
-    
-    
-}
-
-.caixa-maior{
-    background: black;/*vai mudar a cor do fundo da caixa */
-    opacity: 0.8;/*vai deixar o a div tranparente*/
-    border-radius: 25px;/*deixar as bordas redondas*/
-    padding: 20px;/*vai deixar os elementos mais longe das bordas*/
-    width: 95%;/*vai aumentar a largura da caixa*/
-    max-width: 450px;/*isso é para que em telas maiores a largura da caixa só vai até 450px*/
-    
-}
-
-.input-cidade{
-    border: none;/*tira a borda do input*/
-    outline: none;/*tira a borda azul que o google coloca*/
-    padding: 10px;/*vai deixar o input maior*/
-    border-radius: 25px;/*deixar as bordas redondas*/
-    font-size: 20px;/*deixa a lentra da fonte maior */
-    background-color: #7c7c7c2b;/*muda a cor do input*/
-    color: #ffffff;/*muda a cor da letra ao escrever*/
-    width: calc(100% - 70px);/*vai fazer um calcula para determinar o width denpendo do que o usario esta acessando a pagina*/
-}
-
-.botao-busca{
-    border: none;/*tira a borda do botao*/
-    outline: none;/*tira a borda azul que o google coloca*/
-    padding: 10px;/*vai deixar o botao maior*/
-    border-radius: 50px;/*deixar as bordas redondas*/
-    background-color: #7c7c7c2b;/*muda a cor do botao*/
-    cursor: pointer;/*quando colocar o mouse encima vai vira uma mãozinha*/
-    float: right;/*vai mudar a posição do botao para a direita*/
+    box-sizing: border-box;
+    /*que indica que o tamanho da pagina vai até as bordas*/
+    font-family: 'Open Sans', sans-serif;
+    /*vai mudar a fonte da pagina */
 
 }
 
-.img-busca{
-    width: 20px;/*tamanho da imagem*/
-}
+/*Isso eu vou usar em todos os sites que eu fizer*/
 
-.caixa-media{
-    margin-top: 30px;/*vai dar um espaço de 30px na margem superior*/
-}
+body {
+    height: 100vh;
+    /*vai ocupar a tela toda.  'altura'*/
+    width: 100vw;
+    /*vai ocupar a tela toda. 'largura'*/
+    display: flex;
+    /*vai deixar os elementos mais flexiveis para mudar a posição*/
+    justify-content: center;
+    /*vai alinhar o elemento no  centro do eixo horizontal*/
+    align-items: center;
+    /*vai alinhar o elemento no centro do eixo vertical*/
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    /*vai colocar uma imagem de fundo pega da internet*/
 
-.cidade{
-    color: #ffffff;/*vai mudar a cor da fonte*/
-    font-size: 28px ;/*tamanho da fonte */
-    font-weight: 300 ;/*vai deixar a fonte mais fina*/
-}
-
-.temp{
-    font-size: 20px;/*tamanho da fonte */
-    color: #ffffff;/*vai mudar a cor da fonte*/
-    margin-top: 20px;/*vai dar um espaço de 20px na margem superior*/
-}
-
-.caixa-menor{
-    display: flex;/*vai deixar os elementos um do lado do outro */
-    align-items: center;/*vai alinhar o elemento no centro do eixo vertical*/
-    margin-top: 20px;/*vai dar um espaço de 20px na margem superior*/
 
 }
 
-.texto-previsao{
-    color: #ffffff;/*vai mudar a cor da fonte*/
-    margin-left: 20px;/*vai mover o elemento 20 px para a esquerda*/
-    text-transform: capitalize;/*vai deixar a primeira letra sempre maiuscula*/
+.caixa-maior {
+    background: black;
+    /*vai mudar a cor do fundo da caixa */
+    opacity: 0.8;
+    /*vai deixar o a div tranparente*/
+    border-radius: 25px;
+    /*deixar as bordas redondas*/
+    padding: 20px;
+    /*vai deixar os elementos mais longe das bordas*/
+    width: 95%;
+    /*vai aumentar a largura da caixa*/
+    max-width: 450px;
+    /*isso é para que em telas maiores a largura da caixa só vai até 450px*/
 
 }
 
-.umidade{
-    color: #ffffff;/*vai mudar a cor da fonte*/
-    margin-top: 20px;/*vai dar um espaço de 20px na margem superior*/
+.input-cidade {
+    border: none;
+    /*tira a borda do input*/
+    outline: none;
+    /*tira a borda azul que o google coloca*/
+    padding: 10px;
+    /*vai deixar o input maior*/
+    border-radius: 25px;
+    /*deixar as bordas redondas*/
+    font-size: 20px;
+    /*deixa a lentra da fonte maior */
+    background-color: #7c7c7c2b;
+    /*muda a cor do input*/
+    color: #ffffff;
+    /*muda a cor da letra ao escrever*/
+    width: calc(100% - 70px);
+    /*vai fazer um calcula para determinar o width denpendo do que o usario esta acessando a pagina*/
+}
+
+.botao-busca {
+    border: none;
+    /*tira a borda do botao*/
+    outline: none;
+    /*tira a borda azul que o google coloca*/
+    padding: 10px;
+    /*vai deixar o botao maior*/
+    border-radius: 50px;
+    /*deixar as bordas redondas*/
+    background-color: #7c7c7c2b;
+    /*muda a cor do botao*/
+    cursor: pointer;
+    /*quando colocar o mouse encima vai vira uma mãozinha*/
+    float: right;
+    /*vai mudar a posição do botao para a direita*/
+
+}
+
+.img-busca {
+    width: 20px;
+    /*tamanho da imagem*/
+}
+
+.caixa-media {
+    margin-top: 30px;
+    /*vai dar um espaço de 30px na margem superior*/
+}
+
+.cidade {
+    color: #ffffff;
+    /*vai mudar a cor da fonte*/
+    font-size: 28px;
+    /*tamanho da fonte */
+    font-weight: 300;
+    /*vai deixar a fonte mais fina*/
+}
+
+.temp {
+    font-size: 20px;
+    /*tamanho da fonte */
+    color: #ffffff;
+    /*vai mudar a cor da fonte*/
+    margin-top: 20px;
+    /*vai dar um espaço de 20px na margem superior*/
+}
+
+.caixa-menor {
+    display: flex;
+    /*vai deixar os elementos um do lado do outro */
+    align-items: center;
+    /*vai alinhar o elemento no centro do eixo vertical*/
+    margin-top: 20px;
+    /*vai dar um espaço de 20px na margem superior*/
+
+}
+
+.texto-previsao {
+    color: #ffffff;
+    /*vai mudar a cor da fonte*/
+    margin-left: 20px;
+    /*vai mover o elemento 20 px para a esquerda*/
+    text-transform: capitalize;
+    /*vai deixar a primeira letra sempre maiuscula*/
+
+}
+
+.umidade {
+    color: #ffffff;
+    /*vai mudar a cor da fonte*/
+    margin-top: 20px;
+    /*vai dar um espaço de 20px na margem superior*/
 }
